@@ -26,5 +26,5 @@ then go to ```localhost:3000``` in a web browser to view the site.
 
 ### Authorship:
 * **Neel Adwani** (https://devpost.com/neeltron)
-* **Ella X.** (https://devpost.com/eilla1)
+* **Ella Xu** (https://devpost.com/eilla1)
 * **Tiffany Trinh** (https://devpost.com/tiffanytrinh685)
