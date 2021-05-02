@@ -8,7 +8,7 @@ Backend: https://github.com/neeltron/Home-Hub
 
 Devpost: https://devpost.com/software/home-hub-b5whik 
 
-Demo Video: https://youtu.be/FrhKL5l2hRA
+Demo Video: https://youtu.be/XTzu3_Ij1GA
 
 ### Purpose and Functionality
 The Home Hub is a smart home notification dashboard powered by IoT based sensors as well as a cool web dashboard. Information including temperature, humidity, and air quality is collected and displayed on a web dashboard. Then, this data is used to make recommendations such as whether or not you should go outside (air quality) and what the fire danger is (temperature based). The web dashboard also features a light/dark mode for a good user experience.
