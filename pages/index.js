@@ -42,14 +42,14 @@ function Home({ data }) {
           </h2>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-10">
             <Card type={2} icon="trendingup" color="blue" heading="Temperature">
-              80F
+              {data.temperature}° C
             </Card>
 
             <Card type={2} icon="info" color="turquoise" heading="Humidity">
-              90% Relative Humidity
+              {data.humidity}% relative humidity
             </Card>
             <Card type={2} icon="pin" color="purple" heading="Air Quality">
-              300 AQI
+              {data.air} Air Quality Index
             </Card>
           </div>
         </section>
@@ -61,7 +61,7 @@ function Home({ data }) {
 
 export async function getServerSideProps() {
   const res = await fetch(
-    `https://tangled.ae/homehub/index.php?air=120&temp=40`
+    `http://tangled.ae/homehub/exit.php`
   );
   const data = await res.json();
   return { props: { data } };
