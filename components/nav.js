@@ -3,9 +3,8 @@ import { BsCircleHalf } from "react-icons/bs";
 import { useTheme } from "next-themes";
 
 const links = [
-  { label: "", href: "/" },
-  { label: "", href: "/" },
-  { label: "", href: "/" },
+  { label: "Home", href: "/" },
+  { label: "Graph", href: "/graph" }
 ];
 
 export default function Nav() {
