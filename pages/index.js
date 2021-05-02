@@ -3,7 +3,8 @@ import Nav from "../components/nav";
 import Card from "../components/Card";
 import Footer from "../components/footer";
 
-export default function Home() {
+function Home({ data }) {
+  console.log(data);
   return (
     <div className="dark:text-white dark:bg-black">
       <HeadObject />
@@ -29,17 +30,13 @@ export default function Home() {
               None.
             </Card>
 
-            <Card
-              type={2}
-              icon="sun"
-              color="orange"
-              heading="Outdoor Activity"
-            >
+            <Card type={2} icon="sun" color="orange" heading="Outdoor Activity">
               Safe to exercise outdoors.
             </Card>
           </div>
         </section>
-        <section className="mx-8 md:mx-24 mt-8">
+        
+        <section className="mx-8 md:mx-24 mt-24">
           <h2 className="font-montserrat text-2xl md:text-3xl text-center uppercase">
             CURRENTLY
           </h2>
@@ -61,3 +58,13 @@ export default function Home() {
     </div>
   );
 }
+
+export async function getServerSideProps() {
+  const res = await fetch(
+    `https://tangled.ae/homehub/index.php?air=120&temp=40`
+  );
+  const data = await res.json();
+  return { props: { data } };
+}
+
+export default Home;
