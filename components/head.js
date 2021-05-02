@@ -1,12 +1,12 @@
 import Head from "next/head";
 
 export default function HeadObject({ children }) {
-  const title = "Hello World";
-  const description = "This is a Next.js boilerplate.";
-  const keywords = "put some fun keywords here";
-  const author = "Ella";
-  const twitter = "@ella";
-  //const image = "/ogimage.png"; // This is your OpenGraph image
+  const title = "Home Hub";
+  const description = "Home Hub is a IoT based dashboard displaying information about the local environment.";
+  const keywords = "iot, hackathon, nodemcu, web dashboard";
+  const author = "BLAHAJGang";
+  const twitter = "@blahaj";
+  //const image = "/ogimage.png";
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -16,7 +16,7 @@ export default function HeadObject({ children }) {
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
-      <meta property="og:url" content="yourdomain.com" />
+      <meta property="og:url" content="home-hub.tech" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -24,7 +24,6 @@ export default function HeadObject({ children }) {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={twitter} />
       <meta name="twitter:creator" content={twitter} />
-      {/* Add analytics here */}
       {children}
     </Head>
   );
