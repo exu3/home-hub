@@ -29,9 +29,9 @@ export default function Card({
   switch (type) {
     case 2:
       return (
-        <div className="font-ibm bg-black bg-opacity-5 p-8 rounded-xl">
+        <div className="font-ibm bg-black dark:bg-gray-700 bg-opacity-5 p-8 rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           {renderIcon(icon, color, 4)}
-          <h3 className="mt-2 font-bold text-2xl">{heading}</h3>
+          <h3 className="mt-2 font-bold text-2xl md:text-3xl">{heading}</h3>
           <div className={`text-lg w-11/12 ${extraclasses ?? ``}`}>
             {description}
           </div>
