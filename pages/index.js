@@ -27,11 +27,11 @@ function Home({ data }) {
               color="red"
               heading="Current Fire Danger"
             >
-              None.
+              {data.fire}
             </Card>
 
             <Card type={2} icon="sun" color="orange" heading="Outdoor Activity">
-              Safe to exercise outdoors.
+              {data.outdoor}
             </Card>
           </div>
         </section>
