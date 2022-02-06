@@ -17,7 +17,7 @@ The Home Hub is a smart home notification dashboard powered by IoT based sensors
 ### Instructions to Run Locally:
 In a terminal:
 ```
-git clone https://github.com/eilla1/home-hub.git
+git clone https://github.com/exu3/home-hub.git
 cd home-hub
 npm install
 npm run dev
